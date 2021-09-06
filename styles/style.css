@@ -12,13 +12,16 @@ body {
     background-image: linear-gradient(rgb(37, 42, 117), rgb(116, 202, 228), rgb(60, 187, 60));
     height: 500px;
     width: 100%;
-    padding-left: 156px;
-    padding-right: 141px;
     padding-top: 135px;
+    /* border: 2px solid red; */
 }
 
 .titles-menu {
     display: flex;
+    /* width: 100%; */
+    /* border: 2px solid tomato; */
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .title-header {
@@ -44,10 +47,10 @@ a {
     margin-top: 27px;
 }
 
-.banner img {
+
+.banner__img {
     width: 556px;
     height: 438px;
-    margin-left: 102px;
 }
 
 .banner:hover {
@@ -55,7 +58,7 @@ a {
 }
 
 .banner:hover img {
-    transform: scale(1.3) rotate(20deg);
+    transform: scale(1.1) rotate(20deg);
     transition: transform .3s ease-in;
     cursor: pointer;
 }
@@ -122,6 +125,7 @@ a {
     padding: 10px;
     margin-bottom: 100px;
 
+
 }
 
 .neymar,
@@ -170,74 +174,80 @@ a {
 /* Media Queries */
 
 /* Mobile Devices */
-@media only screen and (max-width:674px) {
+@media only screen and (max-width:688px) {
+
     .titles-menu {
+        overflow-x: hidden;
         flex-wrap: wrap;
-
-    }
-
-    .title-header {
-        width: 345px;
-        font-size: 30px;
-    }
-
-    .header-menu {
-        height: 650px;
     }
 
     .banner img {
-        width: 160px;
-        height: 150px;
-        margin-left: 0;
-        margin-top: 20px;
+        width: 306px;
+        height: 247px;
+        margin-left: 0px;
+        margin-top: 40px;
+        overflow: hidden;
     }
 
-    a {
-        margin-top: 0;
+    .title-header {
+        width: 275px;
+        height: 104px;
+        font-size: 36px;
+        color: #ffffff;
+        margin-top: 0px;
+        margin-left: 5px;
+        margin-bottom: 50px;
+    }
+
+    .header-menu {
+        width: 100%;
+        padding-top: 68px;
+        height: 525px;
+
     }
 
     .players {
         grid-template-columns: repeat(1, 1fr);
+        overflow-x: hidden;
+    }
+
+    .auction {
+        padding: 5px;
+        flex-direction: column;
     }
 
     .search-container {
         width: 50%;
-        margin: auto;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .auction {
-        width: 75%;
+        margin-left: 25%;
     }
 
     .full-logo {
-        margin-left: 0;
-    }
-
-    .logo {
-        width: 90%;
-        text-align: center;
+        margin-left: 0px;
     }
 
     .logo img {
-        width: 320px;
-        height: 81px;
-        margin-right: 30px;
+        width: 337px;
+        height: 73px;
     }
 
     .icons {
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
+        margin-left: 165px;
     }
 
     .copyright {
+
+        margin-left: 155px;
+    }
+
+    .container {
+        /* display: none; */
+        overflow-x: hidden;
         width: 100%;
-        margin-left: 0;
-        text-align: center;
+    }
+
+    footer {
+
+        overflow-x: hidden;
     }
 
 }
